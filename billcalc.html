@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            SIP AND SHOP
+        </title>
+        <link  rel="stylesheet" href="itemaddercart.css">
+        
+    </head>
+    <body>
+        <h1>
+            QUENCH YOUR THIRST WITH OUR PREMIUM SELECTIONS
+        </h1>
+        <div class="grid">
+            <div id="first">
+                <button id="water">WATER</button><br><br>
+                <button id="coffee">COFFEE</button><br><br>
+                <button id="juices">JUICES</button><br><br>
+                <button id="shakes">SHAKES</button><br><br>
+                <button id="colddrinks">COLD DRINKS</button><br><br>
+            </div>
+            <div id="mid">
+               
+            </div>
+
+            <div id="last">
+                <p id="cart" style="color:white;font-family:monospace;">YOUR CART<img src="shopping-cart.png" width="50px" height="50px"></p>
+                <div style="display:grid; grid-template-columns:70% 30%;">
+                    <div>
+                        <p><pre style="color:white; font-family:monospace; font-size:15px;">  ITEMS SELECTED</pre></p>
+                        <p id="selecteditem">
+                            <ul id="sil">
+                                <!-- Items will be dynamically added here -->
+                            </ul>
+                        </p>
+                    </div>
+                    <div>
+                        <p style="color:white; font-family:monospace; font-size:15px;">ITEM PRICE</p>
+                        <p id="selectedprice">
+                            <ul id="spl">
+                                <!-- Prices will be dynamically added here -->
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div id="button-container">
+                <button onclick="calculateBill()" id="calbtn">Calculate Bill</button>
+                <button onclick="checkout()" id="checkbtn">Checkout</button>
+                </div>
+                <div id="bill-container" class="bill-container-hidden">
+                    <div class="bill-content">
+                        <pre id="bill-text"></pre>
+                    </div>
+                </div>
+            </div>
+
+        <script src="calculatebill.js">
+
+        </script>
+    </body>
+</html>
